@@ -1,0 +1,11 @@
+/* Enqueue Custom CSS (from root folder) */
+wp_enqueue_style( 'Development-only', get_template_directory_uri() . '/development.css' );
+
+/* Enqueue Custom CSS (from an assets folder) */
+wp_enqueue_style( 'custom-css', get_template_directory_uri() . 'assets/custom.css' );
+
+/* Enqueue Font AwesomeCSS */
+wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+/* Enqueue Bootstrap CSS */
+wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
