@@ -1,0 +1,21 @@
+/**
+ * Add custom logo support.
+ */
+function theme_prefix_setup() {
+    add_theme_support( 'custom-logo' );
+}
+add_action( 'after_setup_theme', 'theme_prefix_setup' );
+
+
+<!-- Then add this to where you want it in header.php -->
+<?php
+// Display the Custom Logo
+the_custom_logo();
+
+// No Custom Logo, just display the site's name
+if (!has_custom_logo()) {
+    ?>
+    <h1><?php bloginfo('name'); ?></h1>
+    <?php
+}
+?>
